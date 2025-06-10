@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puzzle Animation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Puzzle Animation Viewer</h1>
+
+  <input type="file" id="fileInput" accept=".txt" />
+  <canvas id="puzzleCanvas" width="600" height="600"></canvas>
+  <p id="conflictCount">Conflits : 0</p>
+  <button id="nextStepBtn">Étape suivante</button>
+  <div style="margin-top: 20px;">
+    <button id="autoBtn">Lancer l'animation</button>
+    <label for="speedRange">Vitesse :</label>
+    <input type="range" id="speedRange" min="100" max="2000" step="100" value="1000">
+  </div>
+  
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
